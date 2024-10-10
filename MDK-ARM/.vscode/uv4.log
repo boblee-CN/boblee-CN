@@ -1,0 +1,72 @@
+*** Using Compiler 'V5.06 update 6 (build 750)', folder: 'D:\download\MDK\ARM\ARMCC\Bin'
+Build target 'freertos_f103'
+compiling stm32f1xx_it.c...
+compiling gpio.c...
+../Core/Src/gpio.c(45): warning:  #177-D: variable "GPIO_InitStruct"  was declared but never referenced
+    GPIO_InitTypeDef GPIO_InitStruct = {0};
+../Core/Src/gpio.c: 1 warning, 0 errors
+compiling main.c...
+../Core/Inc/spi.h(35): error:  #20: identifier "SPI_HandleTypeDef" is undefined
+  extern SPI_HandleTypeDef hspi1;
+../Core/Inc/usart.h(35): error:  #20: identifier "UART_HandleTypeDef" is undefined
+  extern UART_HandleTypeDef huart1;
+../Core/Inc/usart.h(45): error:  #20: identifier "UART_HandleTypeDef" is undefined
+  void UART_SendString(UART_HandleTypeDef *huart, const char *str);
+../Core/Inc/usart.h(46): error:  #20: identifier "UART_HandleTypeDef" is undefined
+  void UART_SendHexArray(UART_HandleTypeDef *huart, uint8_t *data, uint16_t size);
+../Core/Inc/usart.h(47): error:  #20: identifier "UART_HandleTypeDef" is undefined
+  void UART_Sendhex(UART_HandleTypeDef *huart, const char *str);
+../Core/Inc/usart.h(48): error:  #20: identifier "UART_HandleTypeDef" is undefined
+  void UART_SendUTF8String(UART_HandleTypeDef *huart, const char *str);
+../Core/Inc/usart.h(49): error:  #20: identifier "UART_HandleTypeDef" is undefined
+  void UART_SendIntString(UART_HandleTypeDef *huart, int value);
+../Core/Inc/ws2812Frame.h(73): warning:  #1-D: last line of file ends without a newline
+  #endif /* ws2812Frame_h */
+../Core/Src/main.c(29): warning:  #870-D: invalid multibyte character sequence
+  const char *model2 = "呼吸�? ";
+../Core/Src/main.c(30): warning:  #870-D: invalid multibyte character sequence
+  const char *model3 = "流水�? ";
+../Core/Src/main.c(31): warning:  #870-D: invalid multibyte character sequence
+  const char *model4 = "跑马�? ";
+../Core/Src/main.c(52): error:  #20: identifier "UART_HandleTypeDef" is undefined
+  void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
+../Core/Src/main.c(98): error:  #20: identifier "WS2812_TypeDef" is undefined
+  void SetWSColor(WS2812_TypeDef *ws2812, uint32_t index, uint8_t r, uint8_t g, uint8_t b)
+../Core/Src/main.c(98): error:  #147-D: declaration is incompatible with "void SetWSColor(PWS2812_Struct, uint8_t, uint8_t, uint8_t, uint8_t)"  (declared at line 64 of "../Core/Inc/ws2812Frame.h")
+  void SetWSColor(WS2812_TypeDef *ws2812, uint32_t index, uint8_t r, uint8_t g, uint8_t b)
+../Core/Src/main.c(155): warning:  #223-D: function "HAL_SPI_Transmit" declared implicitly
+                          HAL_SPI_Transmit(&hspi1, my2_ws2812.sendBuff, 24, HAL_MAX_DELAY);
+../Core/Src/main.c(155): error:  #20: identifier "my2_ws2812" is undefined
+                          HAL_SPI_Transmit(&hspi1, my2_ws2812.sendBuff, 24, HAL_MAX_DELAY);
+../Core/Src/main.c(178): warning:  #223-D: function "HAL_SPI_Transmit" declared implicitly
+                          HAL_SPI_Transmit(&hspi1, my_ws2812.sendBuff, sum / 3 * 24, HAL_MAX_DELAY);
+../Core/Src/main.c(208): warning:  #223-D: function "HAL_SPI_Transmit" declared implicitly
+                                  HAL_SPI_Transmit(&hspi1, my_ws2812.sendBuff, sum / 3 * 24, HAL_MAX_DELAY);
+../Core/Src/main.c(212): error:  #20: identifier "my2_ws2812" is undefined
+                                      HAL_SPI_Transmit(&hspi1, my2_ws2812.sendBuff, 24, HAL_MAX_DELAY);
+../Core/Src/main.c(235): warning:  #223-D: function "HAL_SPI_Transmit" declared implicitly
+                                  HAL_SPI_Transmit(&hspi1, my_ws2812.sendBuff, sum / 3 * 24, HAL_MAX_DELAY);
+../Core/Src/main.c(239): error:  #20: identifier "my2_ws2812" is undefined
+                                      HAL_SPI_Transmit(&hspi1, my2_ws2812.sendBuff, 24, HAL_MAX_DELAY);
+../Core/Src/main.c(277): warning:  #223-D: function "HAL_SPI_Transmit" declared implicitly
+                              HAL_SPI_Transmit(&hspi1, my_ws2812.sendBuff, sum / 3 * 24, HAL_MAX_DELAY);
+../Core/Src/main.c(281): error:  #20: identifier "my2_ws2812" is undefined
+                                  HAL_SPI_Transmit(&hspi1, my2_ws2812.sendBuff, 24, HAL_MAX_DELAY);
+../Core/Src/main.c(318): warning:  #223-D: function "HAL_SPI_Transmit" declared implicitly
+                              HAL_SPI_Transmit(&hspi1, my_ws2812.sendBuff, sum / 3 * 24, HAL_MAX_DELAY);
+../Core/Src/main.c(322): error:  #20: identifier "my2_ws2812" is undefined
+                                  HAL_SPI_Transmit(&hspi1, my2_ws2812.sendBuff, 24, HAL_MAX_DELAY);
+../Core/Src/main.c(345): warning:  #223-D: function "GPIO_Init" declared implicitly
+      GPIO_Init();
+../Core/Src/main.c(346): warning:  #223-D: function "SPI_Init" declared implicitly
+      SPI_Init();
+../Core/Src/main.c(347): warning:  #223-D: function "UART_Init" declared implicitly
+      UART_Init();
+../Core/Src/main.c(377): warning:  #1-D: last line of file ends without a newline
+  }
+../Core/Src/main.c: 14 warnings, 15 errors
+compiling stm32f1xx_hal_msp.c...
+compiling freertos.c...
+"freertos_f103\freertos_f103.axf" - 15 Error(s), 15 Warning(s).
+Target not created.
+Build Time Elapsed:  00:00:02

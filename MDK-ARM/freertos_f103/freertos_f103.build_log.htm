@@ -1,0 +1,83 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¶ÃVision V5.40.0.0
+Copyright (C) 2024 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: 1 admin, HP Inc., LIC=D0D7S-LVUFU-JJG6S-LFNW4-C9LM0-67GNF
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.40.0.3
+Toolchain Path:  D:\download\MDK\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 6 (build 750)
+Assembler:       Armasm.exe V5.06 update 6 (build 750)
+Linker/Locator:  ArmLink.exe V5.06 update 6 (build 750)
+Library Manager: ArmAr.exe V5.06 update 6 (build 750)
+Hex Converter:   FromElf.exe V5.06 update 6 (build 750)
+CPU DLL:         SARMCM3.DLL V5.40.0.3
+Dialog DLL:      DCM.DLL V1.17.5.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.3.0.0
+Dialog DLL:      TCM.DLL V1.56.4.0
+ 
+<h2>Project:</h2>
+D:\Desktop\cubeprojects\freertos_f103\MDK-ARM\freertos_f103.uvprojx
+Project File Date:  09/12/2024
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 6 (build 750)', folder: 'D:\download\MDK\ARM\ARMCC\Bin'
+Build target 'freertos_f103'
+Note: source file '../Core/Src/system_stm32f1xx.c' - object file renamed from 'freertos_f103\system_stm32f1xx.o' to 'freertos_f103\system_stm32f1xx_1.o'.
+compiling croutine.c...
+compiling list.c...
+compiling stream_buffer.c...
+compiling event_groups.c...
+compiling timers.c...
+compiling heap_4.c...
+compiling queue.c...
+compiling tasks.c...
+compiling port.c...
+compiling cmsis_os2.c...
+compiling main.c...
+compiling usart.c...
+compiling freertos.c...
+../Core/Inc/ws2812Frame.h(73): warning:  #1-D: last line of file ends without a newline
+  #endif /* ws2812Frame_h */
+../Core/Src/freertos.c(41): warning:  #870-D: invalid multibyte character sequence
+  const char *model2 = "ÂëºÂê∏ÁÅ? ";  //  Chinese
+../Core/Src/freertos.c(42): warning:  #870-D: invalid multibyte character sequence
+  const char *model3 = "ÊµÅÊ∞¥ÁÅ? ";  //  Chinese
+../Core/Src/freertos.c(43): warning:  #870-D: invalid multibyte character sequence
+  const char *model4 = "Ë∑ëÈ©¨ÁÅ? ";  //  Chinese
+../Core/Src/freertos.c: 4 warnings, 0 errors
+linking...
+Program Size: Code=19116 RO-data=440 RW-data=212 ZI-data=8292  
+FromELF: creating hex file...
+"freertos_f103\freertos_f103.axf" - 0 Error(s), 4 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                https://www.keil.com/pack/ARM.CMSIS.6.1.0.pack
+                ARM::CMSIS@6.1.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 6.1.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F1xx_DFP.2.2.0.pack
+                Keil::STM32F1xx_DFP@2.2.0
+                STMicroelectronics STM32F1 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  ./RTE/_freertos_f103
+  D:/download/MDK/ARM/CMSIS/6.1.0/CMSIS/Core/Include
+  D:/download/MDK/Keil/STM32F1xx_DFP/2.2.0/Device/Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE@6.1.0
+      Include file:  CMSIS/Core/Include/tz_context.h
+Build Time Elapsed:  00:00:03
+</pre>
+</body>
+</html>
